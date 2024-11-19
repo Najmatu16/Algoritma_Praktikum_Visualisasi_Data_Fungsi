@@ -30,7 +30,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 vo = 0 #kecepatan awal sebesar 0 m/s
-a =  25 #percepatan konstan 10 m/s^2
+a =  25 #percepatan konstan 25 m/s^2
 t = 120 #waktu dalam 2 menit dikonversikan ke dalam sekon
 
 # Definisi fungsi GLBB x(t)
