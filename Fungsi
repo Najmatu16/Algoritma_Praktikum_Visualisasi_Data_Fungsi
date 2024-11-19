@@ -1,0 +1,106 @@
+Point a_GLB
+                                                                                                                                                                                                                                      import numpy as np
+import matplotlib.pyplot as plt
+
+v = 20 # Kecepatan konstan sebesar 20 m/s
+t = 300 # Waktu dalam 5 menit dikonversikan menjadi 300 detik
+
+# Definisi fungsi GLB x(t)
+def x(t):
+    return v*t
+
+# Mendefinisikan rentang data waktu (t)
+t = np.arange(0, 225, 1)
+
+# Menghitung nilai y untuk setiap nilai x
+y = x(t)
+
+# Menambahkan label, judul, dan grid
+plt.plot(t, y, marker='o', color='b', linestyle='-', label="Grafik GLB")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("Grafik GLB")
+plt.legend()
+plt.grid(True)
+plt.show()
+
+Point B_GLBB
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+vo = 0 #kecepatan awal sebesar 0 m/s
+a =  25 #percepatan konstan 10 m/s^2
+t = 120 #waktu dalam 2 menit dikonversikan ke dalam sekon
+
+# Definisi fungsi GLBB x(t)
+def x(t):
+    return vo*t + 0.5*a*t**2
+
+# Mendefinisikan rentang data waktu x(t)
+t = np.arange(0, 475, 1)
+
+#Menghitung nilai y untuk setiap nilai t
+y = x(t)
+
+# Menambahkan label, judul, dan grid
+plt.plot(t, y, marker='o', color='b', linestyle='-', label="Grafik GLBB")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("Grafik GLBB")
+plt.legend()
+plt.grid(True)
+plt.show()
+
+Point C_GLBB
+                                                                                                                                                                                                                                                                     import numpy as np
+import matplotlib.pyplot as plt
+
+vo = 0 #kecepatan awal sebesar 0 m/s
+a =  2 #percepatan konstan 2 m/s^2
+t = 100 #waktu dalam satuan sekon
+
+# Definisi fungsi GLBB x(t)
+def x(t):
+    return vo*t + 0.5*a*t**2
+
+# Mendefinisikan rentang data waktu x(t)
+t = np.arange(0, 122, 1)
+
+#Menghitung nilai y untuk setiap nilai t
+y = x(t)
+
+# Menambahkan label, judul, dan grid
+plt.plot(t, y, marker='o', color='b', linestyle='-', label="Grafik GLBB")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("Grafik GLBB")
+plt.legend()
+plt.grid(True)
+plt.show()
+
+Point D_GLBB                                                                                                                                                                                                                               import numpy as np
+import matplotlib.pyplot as plt
+
+vo = 60 #kecepatan awal sebesar 60 m/s
+a =  -2.25 #percepatan konstan -2.25 m/s^2
+t = 20 #waktu dalam satuan sekon
+
+# Definisi fungsi GLBB x(t)
+def x(t):
+    return vo*t + 0.5*a*t**2
+
+# Mendefinisikan rentang data waktu x(t)
+t = np.arange(0, 45, 1)
+
+#Menghitung nilai y untuk setiap nilai t
+y = x(t)
+
+# Menambahkan label, judul, dan grid
+plt.plot(t, y, marker='o', color='b', linestyle='-', label="Grafik GLBB")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("Grafik GLBB")
+plt.legend()
+plt.grid(True)
+plt.show()
